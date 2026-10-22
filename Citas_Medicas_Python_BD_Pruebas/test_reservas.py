@@ -11,7 +11,7 @@ class PruebasReservas(unittest.TestCase):
         self.db=Path(self.tmp.name)/'pruebas.db'
         initialize(self.db)
         self.ahora=datetime(2026,10,21,9,0)
-        self.datos={'patient':'María Rodríguez','specialty':'Cardiología','doctor':'Dr. Luis Mora','date':'2026-10-22','time':'10:00'}
+        self.datos={'patient':'AÑADIR NOMBRE','specialty':'Cardiología','doctor':'Dr. ','date':'2026-10-22','time':'10:00'}
     def tearDown(self): self.tmp.cleanup()
     def guardar(self,**cambios): return reservar({**self.datos,**cambios},self.db,self.ahora)
     def test_01_nombre_valido(self): self.assertTrue(validar_nombre('María Rodríguez'))
