@@ -1,8 +1,5 @@
 const doctorsBySpecialty = {
-  "Medicina general": ["Dra. Ana Vargas", "Dr. Carlos Pérez"],
-  Cardiología: ["Dr. Luis Mora", "Dra. Sofía Rojas"],
-  Dermatología: ["Dra. Elena Castro", "Dr. Pablo Solís"],
-  Pediatría: ["Dra. Laura Jiménez", "Dr. Andrés Vega"],
+
 };
 const specialty = document.getElementById("specialty");
 const doctor = document.getElementById("doctor");
