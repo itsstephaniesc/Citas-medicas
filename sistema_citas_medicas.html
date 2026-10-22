@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Clínica Healcare| Citas médicas</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <div class="logo">✚</div>
+        <div>
+          <h1>Clínica Vida Sana</h1>
+          <p>Reserva de citas médicas en línea</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="panel">
+        <span class="tag">RESERVAS EN LÍNEA</span>
+        <h2>Solicitar una cita</h2>
+        <p class="intro">
+          Complete los datos y el sistema verificará que la reserva cumpla con
+          las reglas establecidas.
+        </p>
+        <form id="bookingForm">
+          <label for="patient">Nombre completo del paciente</label>
+          <input
+            id="patient"
+            name="patient"
+            placeholder="Ej. María Rodríguez"
+            autocomplete="name"
+            required
+          />
+          <div class="grid">
+            <div>
+              <label for="specialty">Especialidad</label>
+              <select id="specialty" required>
+                <option value="">Seleccione...</option>
+                <option>Medicina general</option>
+                <option>Cardiología</option>
+                <option>Dermatología</option>
+                <option>Pediatría</option>
+              </select>
+            </div>
+            <div>
+              <label for="doctor">Médico</label>
+              <select id="doctor" required>
+                <option value="">Seleccione especialidad primero...</option>
+              </select>
+            </div>
+          </div>
+          <div class="grid">
+            <div>
+              <label for="date">Fecha de la cita</label
+              ><input type="date" id="date" required />
+            </div>
+            <div>
+              <label for="time">Hora de la cita</label>
+              <select id="time" required>
+                <option value="">Seleccione...</option>
+                <option value="08:00">8:00 a. m.</option>
+                <option value="09:00">9:00 a. m.</option>
+                <option value="10:00">10:00 a. m.</option>
+                <option value="11:00">11:00 a. m.</option>
+                <option value="12:00">12:00 p. m.</option>
+                <option value="13:00">1:00 p. m.</option>
+                <option value="14:00">2:00 p. m.</option>
+                <option value="15:00">3:00 p. m.</option>
+                <option value="16:00">4:00 p. m.</option>
+                <option value="17:00">5:00 p. m.</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit">Validar y reservar cita</button>
+          <div
+            id="message"
+            class="message"
+            role="status"
+            aria-live="polite"
+          ></div>
+        </form>
+      </section>
+      <aside class="panel">
+        <h2>Información de la reserva</h2>
+        <p class="intro">Antes de confirmar, se verifican estas condiciones:</p>
+        <ul>
+          <li>
+            El nombre no puede estar vacío y solo admite letras y espacios.
+          </li>
+          <li>La fecha debe ser hoy o una fecha futura.</li>
+          <li>El horario permitido es de 8:00 a. m. a 5:00 p. m.</li>
+          <li>El médico debe corresponder a la especialidad elegida.</li>
+          <li>No puede existir otra cita con el mismo médico, fecha y hora.</li>
+        </ul>
+        <div class="summary" id="summary">
+          <h3>Estado de la cita</h3>
+          <p>Su cita todavía no ha sido reservada.</p>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      Proyecto académico de pruebas de software · Demo de interfaz (sin conexión
+      a una base de datos)
+    </footer>
+    <script src="./sistema_CITAS.JS" defer></script>
+  </body>
+</html>
