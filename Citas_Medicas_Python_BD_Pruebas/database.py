@@ -2,10 +2,8 @@ import sqlite3
 from pathlib import Path
 DB_PATH = Path(__file__).with_name('citas_medicas.db')
 MEDICOS = {
- 'Medicina general': ['Dra. Ana Vargas', 'Dr. Carlos Pérez'],
- 'Cardiología': ['Dr. Luis Mora', 'Dra. Sofía Rojas'],
- 'Dermatología': ['Dra. Elena Castro', 'Dr. Pablo Solís'],
- 'Pediatría': ['Dra. Laura Jiménez', 'Dr. Andrés Vega'],
+
+ 
 }
 def connect(path=DB_PATH):
     con = sqlite3.connect(str(path), timeout=10)
