@@ -1,0 +1,27 @@
+test_01_nombre_valido (test_reservas.PruebasReservas.test_01_nombre_valido) ... ok
+test_02_nombre_vacio (test_reservas.PruebasReservas.test_02_nombre_vacio) ... ok
+test_03_nombre_espacios (test_reservas.PruebasReservas.test_03_nombre_espacios) ... ok
+test_04_nombre_numeros (test_reservas.PruebasReservas.test_04_nombre_numeros) ... ok
+test_05_nombre_simbolos (test_reservas.PruebasReservas.test_05_nombre_simbolos) ... ok
+test_06_fecha_pasada (test_reservas.PruebasReservas.test_06_fecha_pasada) ... ok
+test_07_hora_antes_ocho (test_reservas.PruebasReservas.test_07_hora_antes_ocho) ... ok
+test_08_hora_despues_cinco (test_reservas.PruebasReservas.test_08_hora_despues_cinco) ... ok
+test_09_limite_ocho (test_reservas.PruebasReservas.test_09_limite_ocho) ... ok
+test_10_limite_cinco (test_reservas.PruebasReservas.test_10_limite_cinco) ... ok
+test_11_fecha_hoy_hora_pasada (test_reservas.PruebasReservas.test_11_fecha_hoy_hora_pasada) ... ok
+test_12_fecha_hoy_hora_futura (test_reservas.PruebasReservas.test_12_fecha_hoy_hora_futura) ... ok
+test_13_fecha_invalida (test_reservas.PruebasReservas.test_13_fecha_invalida) ... ok
+test_14_especialidad_medico_incorrectos (test_reservas.PruebasReservas.test_14_especialidad_medico_incorrectos) ... ok
+test_15_reserva_exitosa (test_reservas.PruebasReservas.test_15_reserva_exitosa) ... ok
+test_16_duplicado_mismo_medico (test_reservas.PruebasReservas.test_16_duplicado_mismo_medico) ... ok
+test_17_medicos_distintos_misma_hora (test_reservas.PruebasReservas.test_17_medicos_distintos_misma_hora) ... ok
+test_18_mismo_medico_otra_hora (test_reservas.PruebasReservas.test_18_mismo_medico_otra_hora) ... ok
+test_19_persistencia_sqlite (test_reservas.PruebasReservas.test_19_persistencia_sqlite) ... ok
+test_20_duplicado_no_crea_paciente_huerfano (test_reservas.PruebasReservas.test_20_duplicado_no_crea_paciente_huerfano) ... ok
+test_21_nombre_invalido_no_guarda (test_reservas.PruebasReservas.test_21_nombre_invalido_no_guarda) ... ok
+test_22_sql_injection_nombre_rechazado (test_reservas.PruebasReservas.test_22_sql_injection_nombre_rechazado) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.189s
+
+OK
